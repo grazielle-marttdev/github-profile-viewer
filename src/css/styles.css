@@ -144,3 +144,44 @@ main {
 .container .profile-results.hide {
   display: none;
 }
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.profile-info h2 {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+  font-size: var(--font-md);
+  color: var(--muted-foreground);
+}
+
+.profile-results .loading {
+  font-size: var(--font-lg);
+  font-weight: 500;
+  margin-top: var(--spacing-xl);
+}
