@@ -209,3 +209,66 @@ main {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.profile-repositories {
+  margin: 2rem auto;
+  max-width: 900px;
+  background: transparent;
+}
+
+.profile-repositories h2 {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.repositories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.repository-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem 1rem;
+  min-width: 250px;
+  max-width: 300px;
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+
+.repository-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.repository-card h3 {
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  text-align: left;
+}
+
+.repository-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.repository-stats span {
+  font-size: var(--font-sm);
+  color: var(--muted-foreground);
+  background: #ececec;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
